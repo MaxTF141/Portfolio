@@ -4,59 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/style.css">
-        <cs></cs>
-    </link>
+    <link rel="stylesheet" href="Styles/style.css">
     <title>Portfolio</title>
 </head>
 <body>
+
+    <div class="background-img">
     <header>
-        <img class="logo" src="https://i.postimg.cc/G3W2GM0y/wolf-stencil-free-cdr-vectors-600w-2193791985.webp" alt="logo">
-        <nav class="menu">
-            <ul class="menu-list">
-                <li><a href="#home">Home</a></li>|
-                <li><a href="#resume">Resume</a></li>|
-                <li><a href="#projects">Projects</a></li>|
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="index.html">
+            <img class="logo" src="https://i.postimg.cc/fL30bfzz/f249e30ab6b24f7caebecf009c27f0ed-1.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>|
+                    <li><a href="#about">AboutMe</a></li>|
+                    <li><a href="#portfolio">Portfolio</a></li>|
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <div class="wrapper">
-                <h2>Maxwill Isaacs</h2>
-                <img class="wrapper img" src="https://i.postimg.cc/wvP7YDQN/IMG-20210901-141818-127.webp" alt="profile">
-                <p>Aspired Developer</p>
-            </div>
-        </section>
-
-        <br>
-
-        <section id="Resume">
-            <h2>Resume</h2>
-            <p class="wrapper p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, maxime inventore laboriosam iste atque corporis beatae magni, ex expedita rerum nihil eligendi tempore labore doloribus iure dignissimos quo dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. In natus dolorum, quia cupiditate autem, laborum quas error commodi mollitia eum expedita, aliquid minus a nulla? Architecto, quos? Cumque, veniam ea? </p>
-        </section>
+    <section id="home">
+        <div class="container">
+            <h2>Maxwill Isaacs</h2>
+            <img class="img-profile" src="Images/IMG_20210901_141818_127.webp" alt="Profile Image">
+            <p>Aspired Developer</p>
+        </div>
+    </section>
+    </div>
         
-        <section id="Projects">
-            <h2>Projects</h2>
-            <p class="wrapper p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus vel voluptate labore repellendus quasi expedita consequatur voluptatibus obcaecati. Cupiditate modi minus eaque totam repellat quas amet quia sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius fugiat nisi? Beatae nam delectus eveniet nesciunt tempora praesentium nulla, ipsum vel est unde voluptates sapiente distinctio ipsam nihil natus. </p>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia cumque vero, temporibus illo quisquam quidem deleniti fuga nam optio magnam enim tempora repellat aliquid ipsa laboriosam ipsam voluptatem recusandae! Provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo quos enim harum, nobis incidunt ratione blanditiis ad, nam nostrum officiis sequi corporis, exercitationem eos quam. Voluptates ea delectus a? </p>
+
         </section>
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, totam tempore, earum voluptatem nesciunt fugit sed ad quaerat, dolores officiis quam optio quibusdam consequatur animi ratione. Libero veniam beatae ea? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas, quisquam pariatur aspernatur corrupti quo blanditiis laborum rerum natus voluptatum delectus debitis asperiores expedita quod nam dolor consectetur error numquam! </p>
 
-        <br>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form action="#">    
+                    <div>
+                        <label for="#firstname">Name</label method="POST">
+                        <input id="firstname" name="firstname" type="text" placeholder="Enter Your Name" required>
+                    </div>
+                    <div>
+                        <label for="#firstname">Surname</label>
+                        <input id="surname" name="surname" type="text" placeholder="Enter Your Surname" required>
+                    </div>
+                    <div>
+                        <label for="#firstname">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10 " placeholder="Enter Message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
 
-        <section id="Contact">
-            <h2>Contact</h2>
-            <p class="wrapper p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime velit cum ipsa eaque reiciendis ad vero corporis quas. Eveniet quis placeat laboriosam fugiat corrupti maxime tempora et doloremque vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos harum molestias laboriosam nobis, necessitatibus voluptatem aspernatur quo. Perferendis asperiores quos necessitatibus eveniet cumque inventore ratione distinctio odio quam laboriosam. </p>
-        </section>
-
-        <br>
-
+            </section>
     </main>
 
     <footer>
-        <p>Copyright &copy;2022</p>
+        <p>Maxwill Copyright &copy;2022</p>
     </footer>
+    
 </body>
 </html>

@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.background-img {
-    background-image: url(https://i.postimg.cc/28VmKjkZ/technology-background-design-in-white-color-free-vector.webp);
+
+body {
+    background-image: url(https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    font-family: 'alkalami';
+}
+
+.background-img {
+    background-image: url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 header {
@@ -26,12 +36,12 @@ main {
     flex-direction: column;
     align-content: space-around;
     padding: 15px;
-    background-color: grey;
 }
 
 .logo {
     width: 6em;
     margin-left: 5px;
+    margin: 5px;
     border-radius: 100%;
 }
 
@@ -56,6 +66,9 @@ nav {
     text-decoration: none;
 }
 
+/* .menu li a::after {
+    
+} */
 .menu li a:hover {
     color: black;
     background-color: rgb(187, 187, 187);
@@ -64,31 +77,34 @@ nav {
 }
 
 #about, #portfolio, #contact {
-    margin: 15px 30%;
+    margin: 15px 20%    ;
     padding: 10px;
     background-color: white;
     border-radius: 30px;
+    opacity: 0.8;
     
 }
 
 
-#home {
+#home .container {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
     text-align: center;
+
 }
 
-.container {
+/* .container {
     align-content: center;
     margin-bottom: 10px;
-}
+} */
 
 .img-profile {
-    display: block;
+    /* display: block; */
     /* justify-content: center; */
     width: 400px;
     height: 400px;
-    margin: 15px auto;
+    /* margin: 15px auto; */
 }
 
 
@@ -97,9 +113,10 @@ footer {
     padding: 20px;
     background-color: #1a1418;
     color: white;
+    text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     text-align: center;
 }
 

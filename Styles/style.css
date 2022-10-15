@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
+}
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #131313;
+    --secondaryColor: #154e90;
+    --tertiaryColor: whitesmoke;
 }
 
 
@@ -27,17 +38,12 @@ header h1 {
 }
 
 .background-img {
-    background-image: url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000);
+    /* background-image: url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000); */
+    background-image: linear-gradient(to bottom, #000000, #1860a5);    
     background-size: cover;
     min-height: 100vh;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    padding: 15px;
-}
 
 .logo {
     width: 6em;
@@ -55,7 +61,7 @@ nav {
 .menu {
     display: flex;
     list-style: none;
-    padding: 5px;
+    padding: 10px;
     letter-spacing: 4px;
 }
 .menu li {
@@ -64,28 +70,39 @@ nav {
 }
 
 .menu li a {
-    color: black;
+    color: var(--tertiaryColor);
     text-decoration: none;
+    padding: 10px;
 }
 
-/* .menu li a::after {
-    
-} */
 .menu li a:hover {
-    color: black;
-    background-color: rgb(187, 187, 187);
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     padding: 10px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    border-radius: 30px;
 }
 
-#about, #portfolio, #contact {
-    margin: 15px 20%    ;
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 15px;
+}
+
+main h2 {
+    letter-spacing: 4px;
+}
+
+#about, #projects, #contact {
+    margin: 15px 20%;
     padding: 10px;
-    background-color: white;
+    color: var(--tertiaryColor);
+    background-color: var(--primaryColor);
     border-radius: 30px;
-    opacity: 0.8;
+    opacity: 0.95;
     box-shadow:10px 10px 10px  black;
+    text-align: center;
     
 }
 
@@ -102,8 +119,23 @@ nav {
     flex-direction: column;
     text-align: center;
     margin: 10px auto;
-    padding-top: 30px;
+    padding: 100px 0;
 }
+
+#contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#contact-icons i{
+    padding: 0 20px;
+    /* width:10px;
+    height:; */
+    color: var(--secondaryColor);
+}
+
 
 /* .container {
     align-content: center;
@@ -118,12 +150,33 @@ nav {
     margin: 15px 100px;
 }
 
+#home div p {
+    font-size: 20px;
+    color: var(--tertiaryColor);
+}
+
+#home div b {
+    letter-spacing: 4px;
+    font-family: 'roboto mono';
+    margin: 0 5px ;
+    padding: 4px ;
+    color:var(--tertiaryColor);
+    background-color: var(--secondaryColor);
+    border-radius: 30px;
+}
+
+#home div p:last-child {
+    color: var(--tertiaryColor);
+    letter-spacing: 3px;
+}
+
+
 
 
 footer {
     padding: 20px;
-    background-color: #1a1418;
-    color: white;
+    background-color:var(--primaryColor);
+    color: var(--tertiaryColor);
     text-align: center;
 }
 
